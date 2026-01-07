@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Site icon">
+  <rect width="64" height="64" rx="14" fill="#051819"/>
+  <path d="M18 40c6.5-16 21.5-16 28 0" fill="none" stroke="#2cf8ff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="24" cy="26" r="3" fill="#18ffb0"/>
+  <circle cx="40" cy="26" r="3" fill="#18ffb0"/>
+</svg>

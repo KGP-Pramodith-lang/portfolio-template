@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Certificate placeholder">
+  <rect width="1200" height="700" rx="40" fill="#051819"/>
+  <rect x="52" y="52" width="1096" height="596" rx="28" fill="#000" fill-opacity="0.18" stroke="#18ffb0" stroke-opacity="0.35"/>
+  <path d="M140 210h920" stroke="#f1f3f4" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round"/>
+  <path d="M140 280h760" stroke="#f1f3f4" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/>
+  <path d="M140 350h820" stroke="#f1f3f4" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="980" cy="488" r="62" fill="#18ffb0" fill-opacity="0.14" stroke="#2cf8ff" stroke-opacity="0.25"/>
+  <text x="140" y="160" fill="#f1f3f4" fill-opacity="0.9" font-family="Inter, system-ui" font-size="44">CERTIFICATE</text>
+  <text x="140" y="420" fill="#9fb3ad" font-family="Inter, system-ui" font-size="24">Replace with a certificate image or PDF cover</text>
+</svg>

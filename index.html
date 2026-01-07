@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- State Bar -->
+    <div class="state-bar-container">
+      <div class="state-bar">
+        <nav class="state-nav" aria-label="Primary navigation">
+          <a class="state-link" href="#home">Intro</a>
+          <a class="state-link" href="#about">About</a>
+          <a class="state-link" href="#skills">Skills</a>
+          <a class="state-link" href="#portfolio">Projects</a>
+          <a class="state-link" href="#education">Education</a>
+          <a class="state-link" href="#certifications">Certifications</a>
+          <a class="state-link" href="#gallery">Gallery</a>
+          <a class="state-link" href="#contact">Contact</a>
+        </nav>
+        <div class="social-icons" aria-label="Social links">
+          <a
+            class="social-icon"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/your-handle/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a
+            class="social-icon"
+            aria-label="Instagram"
+            href="https://www.instagram.com/your-handle/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            class="social-icon"
+            aria-label="GitHub"
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 id="heroTitle">YOUR NAME</h1>
+          <h4 id="heroDegree" class="hero-degree">Your Title / Role</h4>
+          <p id="heroSubtitle">
+            Short tagline about what you do (e.g., Full-Stack Developer | Data
+            Scientist | Designer)
+          </p>
+          <div class="hero-actions">
+            <a
+              class="cta-button"
+              id="downloadCvBtn"
+              href="CV/sample-cv.pdf"
+              download
+              aria-label="Download CV"
+              >Download CV</a
+            >
+            <a
+              id="whatsAppBtn"
+              class="scroll-top-btn scroll-top-btn--inline"
+              href="https://wa.me/15550000000?text=Hello!"
+              target="_blank"
+              rel="noopener"
+              aria-label="Chat on WhatsApp"
+              title="Chat on WhatsApp"
+            >
+              <span class="whatsapp-label">WhatsApp</span>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="images/placeholder-avatar.svg"
+            alt="Profile placeholder"
+            id="heroImage"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p id="aboutText">
+          Write a short introduction about yourself. Mention what you specialize
+          in, what you’re looking for, and what makes you unique. Keep it to 3–5
+          sentences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p id="skillsIntro" class="section-lead">
+          A quick overview of the tools and technologies I work with.
+        </p>
+
+        <div class="skills">
+          <div class="skills-group">
+            <h3 class="skills-heading" id="skillsHeading1">
+              Programming & Data
+            </h3>
+            <div class="skills-grid" aria-label="Programming and data skills">
+              <span class="skill-chip" id="skill1">Python</span>
+              <span class="skill-chip" id="skill2">JavaScript</span>
+              <span class="skill-chip" id="skill3">SQL</span>
+              <span class="skill-chip" id="skill4">Pandas</span>
+              <span class="skill-chip" id="skill5">NumPy</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-heading" id="skillsHeading2">Web & Tools</h3>
+            <div class="skills-grid" aria-label="Web and tools skills">
+              <span class="skill-chip" id="skill6">HTML</span>
+              <span class="skill-chip" id="skill7">CSS</span>
+              <span class="skill-chip" id="skill8">Git</span>
+              <span class="skill-chip" id="skill9">REST APIs</span>
+              <span class="skill-chip" id="skill10">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p id="portfolioIntro">Here are some projects I've worked on:</p>
+
+        <div class="projects" aria-label="Projects carousel">
+          <div class="projects-carousel">
+            <button
+              class="gallery-arrow gallery-arrow--left"
+              type="button"
+              aria-label="Scroll projects left"
+            >
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div
+              class="projects-track"
+              tabindex="0"
+              aria-label="Projects track"
+            >
+              <article class="portfolio-item project-card">
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-project.svg"
+                  alt="Project thumbnail placeholder"
+                  loading="lazy"
+                />
+                <h3 id="project1Title">Project Title</h3>
+                <p id="project1Description">
+                  A short description of what this project does and the tech
+                  used.
+                </p>
+              </article>
+
+              <article class="portfolio-item project-card">
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-project.svg"
+                  alt="Project thumbnail placeholder"
+                  loading="lazy"
+                />
+                <h3 id="project1Title">Project Title</h3>
+                <p id="project1Description">
+                  A short description of what this project does and the tech
+                  used.
+                </p>
+              </article>
+
+              <article class="portfolio-item project-card">
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-project.svg"
+                  alt="Project thumbnail placeholder"
+                  loading="lazy"
+                />
+                <h3 id="project2Title">Project Title</h3>
+                <p id="project2Description">
+                  A short description of what this project does and the tech
+                  used.
+                </p>
+              </article>
+
+              <article class="portfolio-item project-card">
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-project.svg"
+                  alt="Project thumbnail placeholder"
+                  loading="lazy"
+                />
+                <h3 id="project3Title">Project Title</h3>
+                <p id="project3Description">
+                  A short description of what this project does and the tech
+                  used.
+                </p>
+              </article>
+            </div>
+
+            <button
+              class="gallery-arrow gallery-arrow--right"
+              type="button"
+              aria-label="Scroll projects right"
+            >
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div
+            class="photo-gallery-dots projects-dots"
+            aria-label="Projects dots"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p id="educationIntro" class="section-lead">
+          Academic background and key learning milestones.
+        </p>
+
+        <div class="timeline" aria-label="Education timeline">
+          <article class="timeline-item" aria-label="Education item 1">
+            <div class="timeline-meta">
+              <h3 class="timeline-title" id="edu1Title">
+                Degree / Program Name
+              </h3>
+              <p class="timeline-subtitle" id="edu1Org">
+                University / Institution Name
+              </p>
+              <p class="timeline-dates" id="edu1Dates">20XX - 20XX</p>
+            </div>
+            <p class="timeline-desc" id="edu1Desc">
+              Focus areas: add key topics, awards, GPA, or activities.
+            </p>
+          </article>
+
+          <article class="timeline-item" aria-label="Education item 1">
+            <div class="timeline-meta">
+              <h3 class="timeline-title" id="edu1Title">Education / Course</h3>
+              <p class="timeline-subtitle" id="edu1Org">
+                School / Institution Name
+              </p>
+              <p class="timeline-dates" id="edu1Dates">20XX - 20XX</p>
+            </div>
+            <p class="timeline-desc" id="edu1Desc">
+              Notes: optional summary of what you studied or achieved.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <p id="certificationsIntro" class="section-lead">
+          Selected certifications and professional learning.
+        </p>
+
+        <div
+          class="projects projects--certs"
+          data-item-label="certification"
+          aria-label="Certifications carousel"
+        >
+          <div class="projects-carousel">
+            <button
+              class="gallery-arrow gallery-arrow--left"
+              type="button"
+              aria-label="Scroll certifications left"
+            >
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div
+              class="projects-track"
+              tabindex="0"
+              aria-label="Certifications track"
+            >
+              <a
+                class="portfolio-item project-card"
+                href="images/placeholder-cert.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open certification 1"
+              >
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-cert.svg"
+                  alt="Certification 1 thumbnail"
+                  loading="lazy"
+                />
+                <h3 id="cert1Title">Certification Name</h3>
+                <p id="cert1Org">Issuer / Platform</p>
+                <p id="cert1Dates">Month YYYY</p>
+              </a>
+
+              <a
+                class="portfolio-item project-card"
+                href="images/placeholder-cert.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open certification 2"
+              >
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-cert.svg"
+                  alt="Certification 2 thumbnail"
+                  loading="lazy"
+                />
+                <h3 id="cert2Title">Certification Name</h3>
+                <p id="cert2Org">Issuer / Platform</p>
+                <p id="cert2Dates">Month YYYY</p>
+              </a>
+
+              <a
+                class="portfolio-item project-card"
+                href="images/placeholder-cert.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open certification 3"
+              >
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-cert.svg"
+                  alt="Certification 3 PDF"
+                  loading="lazy"
+                />
+                <h3 id="cert3Title">Certification Name</h3>
+                <p id="cert3Org">Issuer / Platform</p>
+                <p id="cert3Dates">Month YYYY</p>
+              </a>
+
+              <a
+                class="portfolio-item project-card"
+                href="images/placeholder-cert.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open certification 4"
+              >
+                <img
+                  class="project-thumb"
+                  src="images/placeholder-cert.svg"
+                  alt="Certification 4 PDF"
+                  loading="lazy"
+                />
+                <h3 id="cert4Title">Certification Name</h3>
+                <p id="cert4Org">Issuer / Platform</p>
+                <p id="cert4Dates">Month YYYY</p>
+              </a>
+            </div>
+
+            <button
+              class="gallery-arrow gallery-arrow--right"
+              type="button"
+              aria-label="Scroll certifications right"
+            >
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div
+            class="photo-gallery-dots projects-dots"
+            aria-label="Certifications dots"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="photo-gallery" aria-label="Photo gallery">
+          <div class="photo-gallery-carousel">
+            <button
+              class="gallery-arrow gallery-arrow--left"
+              type="button"
+              aria-label="Scroll photos left"
+            >
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div
+              class="photo-gallery-track"
+              tabindex="0"
+              aria-label="Photo gallery track"
+            >
+              <div class="photo-card">
+                <img
+                  src="images/placeholder-photo.svg"
+                  alt="Photo gallery image 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="photo-card">
+                <img
+                  src="images/placeholder-photo.svg"
+                  alt="Photo gallery image 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="photo-card">
+                <img
+                  src="images/placeholder-photo.svg"
+                  alt="Photo gallery image 4"
+                  loading="lazy"
+                />
+              </div>
+              <div class="photo-card">
+                <img
+                  src="images/placeholder-photo.svg"
+                  alt="Photo gallery image 5"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <button
+              class="gallery-arrow gallery-arrow--right"
+              type="button"
+              aria-label="Scroll photos right"
+            >
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="photo-gallery-dots" aria-label="Photo gallery dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-actions" aria-label="Contact actions">
+          <a
+            class="cta-button"
+            href="CV/sample-cv.pdf"
+            download
+            aria-label="Download CV"
+            >Download CV</a
+          >
+        </div>
+        <div class="contact-info">
+          <div class="contact-grid" aria-label="Contact options">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">Email</span>
+                <a href="mailto:you@example.com" id="emailAddress"
+                  >you@example.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/your-handle/"
+                  target="_blank"
+                  rel="noopener"
+                  id="linkedinUrl"
+                  >your-handle</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">GitHub</span>
+                <a
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noopener"
+                  id="githubUrl"
+                  >your-username</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">Instagram</span>
+                <a
+                  href="https://www.instagram.com/your-handle/"
+                  target="_blank"
+                  rel="noopener"
+                  id="instagramUrl"
+                  >your-handle</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">WhatsApp</span>
+                <a
+                  href="https://wa.me/15550000000?text=Hello!"
+                  target="_blank"
+                  rel="noopener"
+                  id="whatsappUrl"
+                  >+1 555 000 0000</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <div class="contact-content">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+15550000000" id="phoneNumber">+1 555 000 0000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p id="footerText">© 2026 Your Name | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top-btn"
+      type="button"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

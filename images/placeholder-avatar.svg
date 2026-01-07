@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2cf8ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#18ffb0" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="48" fill="#051819"/>
+  <rect x="24" y="24" width="672" height="672" rx="40" fill="url(#g)" stroke="#2cf8ff" stroke-opacity="0.35"/>
+  <circle cx="360" cy="300" r="110" fill="#000" fill-opacity="0.18" stroke="#f1f3f4" stroke-opacity="0.25"/>
+  <path d="M165 612c44-106 136-166 195-166s151 60 195 166" fill="#000" fill-opacity="0.18" stroke="#f1f3f4" stroke-opacity="0.2"/>
+  <text x="360" y="92" fill="#f1f3f4" fill-opacity="0.9" font-family="Inter, system-ui" font-size="28" text-anchor="middle">YOUR PHOTO</text>
+</svg>
